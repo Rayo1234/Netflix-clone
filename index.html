@@ -6,14 +6,14 @@
     <title>Netflix</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             const signInButton = document.getElementById('signInButton');
 
             signInButton.addEventListener('click', function () {
-                window.location.href = 'login.html';
+                window.location.href = 'signup.html';
             });
-        });
+        }); -->
     </script>
 </head>
 <body>
@@ -26,7 +26,7 @@
                         <img src="./img/netflixLogo.png" class="h-36" alt="Logo">
                     </a>
                     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button id="signInButton" class="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm mr-16 px-4 py-2 text-center">Sign in</button>
+                        <button class="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm mr-16 px-4 py-2 text-center">Sign in</button>
                     </div>
                 </div>
             </nav>
@@ -35,12 +35,12 @@
                 <p class="mb-6 text-2xl text-white font-normal sm:px-16 lg:px-48">Watch anywhere. Cancel anytime.</p>
                 <p class="mb-8 text-2xl text-white font-normal sm:px-16 lg:px-48">Ready to watch? Enter your email to create or restart your membership.</p>
                 <div class="mb-10 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-                    <a href="./Login.html" class="inline-flex justify-center items-center py-4 px-7 text-2xl font-medium text-center text-white rounded-lg bg-red-600 hover:bg-red-700">
+                    <button class="inline-flex justify-center items-center py-4 px-7 text-2xl font-medium text-center text-white rounded-lg bg-red-600 hover:bg-red-700">
                         Get Started
                         <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                         </svg>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -142,12 +142,12 @@
             <h1 class="text-white mb-5 text-2xl font-normal">Ready to watch? Enter your email to create or restart your membership.</h1>
             <div class="mb-6 flex flex-col sm:flex-row sm:justify-center space-x-2">
             <input type="email" id="email" class="shadow-sm bg-slate-900 border border-slate-800 text-gray-900 placeholder:text-lg placeholder:font-normal rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-96 p-2 dark:shadow-sm-light" placeholder="Email address"/>
-                <a href="#" class="inline-flex justify-center items-center py-4 px-6 text-2xl font-medium text-center text-white rounded-sm bg-red-600 hover:bg-red-700">
+                <button class="inline-flex justify-center items-center py-4 px-6 text-2xl font-medium text-center text-white rounded-sm bg-red-600 hover:bg-red-700">
                     Get Started
                     <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
-                </a>
+                </button>
             </div>        
         </div>
         <footer class="bg-black mx-auto py-14 h-max text-center">
